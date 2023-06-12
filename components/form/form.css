@@ -1,0 +1,29 @@
+.newcard-form {
+  display: block;
+  margin: 120px auto auto auto;
+  max-width: 500px;
+  display: grid;
+  padding: 10px;
+  margin-bottom: 100px;
+}
+
+fieldset {
+  display: grid;
+  gap: 5px;
+}
+
+legend {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+.form__button-submit {
+  background: var(--secondary);
+  color: var(--white);
+  border: none;
+  display: block;
+  margin: 0 auto 2rem auto;
+  padding: 1rem;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
