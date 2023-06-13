@@ -22,7 +22,7 @@ function createCard(data) {
   //cardlistitem
   const cardListItem = document.createElement("li");
   cardListItem.classList.add("card-list__item");
-  form.append(cardListItem);
+  cardList.append(cardListItem);
 
   //card
   const card = document.createElement("article");
