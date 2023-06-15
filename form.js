@@ -4,8 +4,6 @@ const submitButton = document.querySelector(".form__button-submit");
 const cardList = document.querySelector(".card-list");
 const main = document.querySelector('[data-js="main"]');
 
-//read all entered data from the input fields (question, answer, tags)
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -17,6 +15,16 @@ form.addEventListener("submit", (e) => {
   const tag = data.tagTextarea;
   createCard(data);
 });
+
+/** === AD ELEMENTS FOR NEW CARD  **/
+
+const newCard = document.createElement("li");
+const newArticle = document.createElement("article");
+const newCardQuestion = document.createElement("h2");
+const newCardAnswer = document.createElement("p");
+const newCardButton = document.createElement("button");
+
+/** === AD CLASSES FOR NEW CARD  **/
 
 //function to create a card with the data of the submit entries
 function createCard(data) {
