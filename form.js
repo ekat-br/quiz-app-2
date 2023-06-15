@@ -1,7 +1,8 @@
 //listen the form's submit event
-form = document.querySelector(".newcard-form");
-submitButton = document.querySelector(".form__button-submit");
-cardList = document.querySelector(".card-list");
+const form = document.querySelector(".newcard-form");
+const submitButton = document.querySelector(".form__button-submit");
+const cardList = document.querySelector(".card-list");
+const main = document.querySelector('[data-js="main"]');
 
 //read all entered data from the input fields (question, answer, tags)
 
