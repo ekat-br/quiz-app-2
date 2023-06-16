@@ -26,40 +26,6 @@ const newCardButton = document.createElement("button");
 
 /** === AD CLASSES FOR NEW CARD  **/
 
-//function to create a card with the data of the submit entries
-function createCard(data) {
-  //cardlistitem
-  const cardListItem = document.createElement("li");
-  cardListItem.classList.add("card-list__item");
-  cardList.append(cardListItem);
-
-  //card
-  const card = document.createElement("article");
-  card.classList.add("card");
-  cardListItem.append(card);
-
-  //question
-  const cardQuestion = document.createElement("h2");
-  cardQuestion.classList.add("card__question");
-  cardQuestion.textContent = data.question;
-  card.append(cardQuestion);
-
-  //answer
-  const cardAnswer = document.createElement("p");
-  cardAnswer.classList.add("card__answer");
-  cardAnswer.textContent = data.answer;
-  card.append(cardAnswer);
-
-  //tag
-  const cardTagList = document.createElement("ul");
-  cardTagList.classList.add("card__tag-list");
-  card.append(cardTagList);
-  const cardTag = document.createElement("li");
-  cardTag.classList.add("card__tag-list-item");
-  cardTag.textContent = data.tag;
-  cardTagList.append(cardTag);
-}
-
 const questionElement = document.querySelector("#questionTextarea");
 const answerElement = document.querySelector("#answerTextarea");
 const amountLeftQuestion = document.querySelector(
